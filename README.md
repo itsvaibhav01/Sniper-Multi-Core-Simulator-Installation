@@ -8,8 +8,9 @@ gcc 7.3
 g++ 7 
 
 # Installing
-* Download Sniper 7.1 from their official website http://snipersim.org/w/Download  
-* Download Pin kit 3.7 https://software.intel.com/en-us/articles/pin-a-binary-instrumentation-tool-downloads  
+* Download Sniper 7.2 from their official website http://snipersim.org/w/Download  or just use ` $ wget http://snipersim.org/download/aa88c9767229ce77/packages/sniper-latest.tgz`
+
+* Download Pin kit 3.7 https://software.intel.com/en-us/articles/pin-a-binary-instrumentation-tool-downloads or request here [driver for 3.7](https://drive.google.com/file/d/1KeBtlAwSmhglFz0JPi5aCRkweyylbW-w/view?usp=drive_web)
 * Extract Pin into sniper/pin_kit  
 
 ```bash
@@ -30,8 +31,3 @@ $cd test/fft
 $make run  
 ```
 
-# Bug fix 
-* Sniper 7.1 has bugs for simulator large number of cores. Use patch to fix it. Patch is provided by Sniper Author. 
-> $patch -p1 < sniper-7.1-shmemperf-and-maxthreads-fix-v2.patch  
-> $make clean  
-> $make  
